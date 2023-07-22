@@ -1,9 +1,8 @@
 from SibProMQTT import SibProMQTT as spmqtt
 import time
 from datetime import datetime
-#import machine
 
-#uart = machine.UART(2,115200)
+
 
 mess50 = "abcdefghijklmnopqrstuvwx|abcdefghijklmnopqrstuvwx|"
 mess100 = "abcdefghijklmnopqrstuvwx|abcdefghijklmnopqrstuvwx|abcdefghijklmnopqrstuvwx|abcdefghijklmnopqrstuvwx|"
@@ -55,6 +54,4 @@ for k in range (HASH) :
         
 	avg_acc = acc/REP
 	ustring = "average computation cost " + hash_type + " = " + str(avg_acc)
-    #print("average computation cost ", hash_type, " = ", avg_acc)
-	#uart.write(ustring)
 	print(ustring)
